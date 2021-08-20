@@ -54,9 +54,12 @@
         <section class="hero section">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button class="hero-button">Заказать услугу</button>
+                <button class="hero-button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
+
+      
+       
 
         <!--Preferences-->
 
@@ -114,12 +117,25 @@
             <div class="container">
                 <h2 class="about-us-title">Чем мы занимаемся</h2>
                 <ul class="about-us list">
-                    <li class="about-us-pic"><img src="images/box1.jpg" class="about-us-photo" alt="компьютер"
-                            width="370"></li>
-                    <li class="about-us-pic"><img src="images/box2.jpg" class="about-us-photo" alt="телефон"
-                            width="370"></li>
-                    <li class="about-us-pic"><img src="images/box3.jpg" class="about-us-photo" alt="планшет"
-                            width="370"></li>
+                    <li class="about-us-pic">
+                            <img src="images/box1.jpg" class="about-us-photo" alt="компьютер"
+                            width="370">
+                            <div class="about-us-description"><h3 class="about-us-name">Десктопные приложения</h3></div>
+                    </li>
+                        <li class="about-us-pic">
+                            <img src="images/box2.jpg" class="about-us-photo" alt="телефон"
+                                width="370">
+                            <div class="about-us-description">
+                                    <h3 class="about-us-name">Мобильные приложения</h3>
+                            </div>
+                    </li>
+                    <li class="about-us-pic">
+                            <img src="images/box3.jpg" class="about-us-photo" alt="планшет"
+                            width="370">
+                            <div class="about-us-description">
+                                <h3 class="about-us-name">Дизайнерские решения</h3>
+                            </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -307,6 +323,18 @@
         </div>
     </section>
 
+    <!--Modal-->
+    
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="close-modal" data-modal-close>
+                <svg class="close-modal-icon" width="11" height="11">
+                    <use href="./images/symbol-defs.svg#icon-close-1"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
     <!--Footer  -->
     <footer class="footer">
         <div class="container">
@@ -352,7 +380,7 @@
             </div>
     </footer>
 
-
+<script src="./js/modal.js"></script>
 </body>
 
 </html>
